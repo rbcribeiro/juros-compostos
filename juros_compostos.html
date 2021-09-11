@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+    }
+
+	
+    var valorInicial = parseInt(prompt("Qual o valor inicial?"));
+        
+    var jurosMensal = parseInt(prompt("Qual a taxa de juros por mês?"));
+
+    var meses = parseInt(prompt("Quantos meses será investido?"));
+   
+
+    var valorFinal = (valorInicial * Math.pow((1 + jurosMensal / 100), meses)).toFixed(2);
+    var valorJuros = (valorFinal - valorInicial).toFixed(2);
+
+
+    mostra("O valor final será de " + valorFinal + " reais");
+    pulaLinha();
+    mostra("O valor dos juros será de " + valorJuros + " reais");
+    pulaLinha();
+    mostra("Valor inicial " + valorInicial + "<br>");
+    mostra("Juros mensal " + jurosMensal + "<br>");
+    mostra("Meses investidos " + meses + "<br>");
+    mostra("Valor final " + valorFinal + "<br>");
+    mostra("Valor juros " + valorJuros + "<br>");
+
+
+
+
+//  M = C * (1 + i)t
+// M = montante ou valor final
+// C = capital ou valor inicial
+// i = juros mensal
+// t = meses investido
+</script>
