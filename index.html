@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- para layout responsivo -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Grenze:wght@300;400&display=swap" rel="stylesheet" />
+ 
+    <title>Juros Compostos</title>
+    <link rel="icon" type="image/png" href="./img/iconGoT.png" />
+
+    <link rel="stylesheet" href="/style.css" />
+ 
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Calculadora de juros compostos</h1>
+      </header>
+      
+      <main>
+        <label>Qual o valor inicial do emprestimo/investimento?</label><br>
+        <input type="text" id="valorInicial" placeholder="xxxx"><br>
+        <label>Qual a taxa de juros por mês?</label><br>
+        <input type="text" id="taxaJurosMes" placeholder="xxxx"><br>
+        <label>Quantos meses será investido?</label><br>
+        <input type="text" id="mesesInvestidos" placeholder="xxxx"><br>
+        <button id="onClickCalcularJuros" onclick="onClickCalcularJuros()">Calcular</button>
+        <p id="resultado"></p>
+      </main> 
+    </div> 
+    
+    <footer>
+      Desenvolvido por <a href="https://www.linkedin.com/in/rbcribeiro/" target="_blank">Renata Ribeiro</a> | 2023
+    </footer>   
+    
+    <script src="/javascript.js"></script>
+    
+  </body>
+</html>
